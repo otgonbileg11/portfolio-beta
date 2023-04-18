@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function About() {
     return (
-        <div class="about-container" id="about">
+        <div className="about-container" id="about">
         <div className="about">
             <div className="code-wrp">
                 <div data-line-nr="01" className="code-l">

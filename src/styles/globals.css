@@ -25,7 +25,7 @@ body {
 }
 
 .navbar-link>li {
-  @apply hover:bg-primary hover:text-softwhite h-full px-6 py-4 cursor-pointer;
+  @apply hover:bg-primary h-full px-6 py-4 cursor-pointer;
 }
 
 .hero {
@@ -46,59 +46,29 @@ body {
   @apply flex flex-col;
 }
 
-.code {
-  @apply text-xl text-gray-400;
-}
-
-.code-1 {
-  @apply relative;
-}
-
 .methods,
 .dot,
-.comment {
-  display:inline;
-}
-
-.methods {
-  color: #ffb42a;
-}
-
-.propname {
-  color: #ffcc6f;
-}
-.dot {
-  color: #ffb42a;
-  letter-spacing: 8px;
-}
-.comment {
-  color: #ffb42a;
-}
-.scope {
-  color: #ffb42a;
-}
+.comment,
+.methods,
+.propname,
+.scope,
+.code-1,
+.code,
+.string,
+.number,
 .prop2 {
-  color: #ffb42a;
+  display:inline;
+  color: white;
+  letter-spacing: 4px;
 }
-.string {
-  color: #ffb42a;
-}
+
 
 .about-container {
-  @apply px-32 mb-4 relative mt-20  ;
+  @apply px-32 mb-4 relative mt-20;
 }
 
 .about {
-  font-family:monospace;
-  @apply border-4 border-primary p-12 bg-primary text-[#f99e27];
-  text-shadow:
-    0 0 2px #e09224,
-    0 0 5px #e09224,
-    0 0 7px #e09224,
-    0 0 10px #7a4713,
-    0 0 25px #7a4713,
-    0 0 45px #7a4713;
-  letter-spacing: 4px;
+  @apply text-lg border-4 border-primary p-12 bg-secondary text-white font-bold;
   position:relative;
 }
 
@@ -112,15 +82,15 @@ body {
 }
 
 .title {
-  @apply w-32 h-full text-2xl text-center border-l-4 border-t-4 border-r-4 border-primary flex items-center justify-center;
+  @apply w-48 h-full text-2xl text-center text-softwhite border-l-4 border-t-4 border-r-4 border-primary bg-secondary flex items-center justify-center;
 }
 
 .projects {
-  @apply h-[calc(100vh-9rem)] px-32 flex justify-center items-center;
+  @apply px-32 flex flex-col justify-center items-center mt-6 mb-20;
 }
 
 .project-container {
-  @apply w-full h-[60vh] border-4 border-primary p-4 flex;
+  @apply w-full h-[100vh] border-4 border-primary flex my-8;
 }
 
 /* width */
