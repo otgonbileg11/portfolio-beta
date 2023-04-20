@@ -1,8 +1,10 @@
 import Image from "next/image";
+import {motion} from 'framer-motion'
+import { fadeIn } from "@/variants"
 
 export default function About() {
     return (
-        <div className="about-container" id="about">
+        <motion.div variants={fadeIn('down', 0.3)} initial='hidden' whileInView={'show'} viewport={{once: false, amount: 0.2}} className="about-container" id="about">
         <div className="about">
             <div className="code-wrp">
                 <div data-line-nr="01" className="code-l">
@@ -167,6 +169,6 @@ export default function About() {
                 </div>
             </div>
          </div>
-         </div>
+         </motion.div>
     )
 }

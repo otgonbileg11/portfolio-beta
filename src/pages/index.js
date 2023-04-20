@@ -30,8 +30,8 @@ export default function Home() {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
       </Head>
       <main className={`main ${pt.className}`}>
-        <Navbar />
         <div className='w-full bg-[#FECACA] h-[calc(100vh-3rem)] overflow-y-scroll'>
+            <Navbar />
             <div className={`${oswald.className}`}>
             <Hero/>
             </div>
