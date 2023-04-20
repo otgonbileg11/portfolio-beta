@@ -1,8 +1,10 @@
 import Image from "next/image";
+import {motion} from 'framer-motion'
+import { fadeIn } from "@/variants"
 
 export default function About() {
     return (
-        <div className="about-container" id="about">
+        <motion.div variants={fadeIn('down', 0.3)} initial='hidden' whileInView={'show'} viewport={{once: false, amount: 0.2}}className="about-container" id="about">
         <div className="about">
             <div className="code-wrp">
                 <div data-line-nr="01" className="code-l">
@@ -154,7 +156,7 @@ export default function About() {
                     <div className="dot">····</div>
                     <div className="methods">return </div>
                     &#40;&#91; 
-                    <span className="string">'HTML/CSS/JS', 'Vue', 'Node.js', 'Redis/NATS/RabbitMQ', 'Bootstrap/Tailwind', 'Webpack/Gulp/Vite', 'SCSS/Less', 'npm/yarn/pnpm', 'Docker/k8s', 'PWA', 'SSR', 'SPA', 'GIT/CVS', 'Cordova', 'NativeScript', 'Electron', 'Web-extensions', 'Web Sockets', 'Firebase, 'RWD/W3C/ARIA/WCAG', 'XSLT/Smarty/Twig', 'PHP', 'MySQL/MongoDB/ORM', 'Wordpress', 'Photoshop', 'Illustrator', 'After Effects', 'Premiere', 'Motion design', 'UX/UI', 'DTP', 'C#', 'Unity', 'TypeScript', 'NestJS', 'Cypress', 'Jest', 'Nuxt', 'Quasar' </span> 
+                    <span className="string">'HTML/CSS/JS', 'Vue', 'Node.js', 'Bootstrap/Tailwind', 'Webpack/Vite', 'SCSS/Less', 'npm/yarn/pnpm', 'SSR', 'GIT/CVS', 'Web-extensions', 'Web Sockets', 'Firebase, 'PHP', 'MySQL/MongoDB/ORM', 'Wordpress', 'Photoshop', 'Illustrator', 'After Effects', 'Premiere', 'Motion design', 'UX/UI', 'C#', 'Unity', 'TypeScript', 'NestJS', 'Cypress', 'Jest', 'Nuxt' </span> 
                     <span className="cursor"></span> 
                      &#93;&#41;
                 </div> 
@@ -167,6 +169,6 @@ export default function About() {
                 </div>
             </div>
          </div>
-         </div>
+        </motion.div>
     )
 }
