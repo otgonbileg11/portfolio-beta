@@ -52,15 +52,51 @@ body {
 .methods,
 .propname,
 .scope,
-.code-1,
-.code,
 .string,
 .number,
 .prop2 {
   display:inline;
-  color: white;
   letter-spacing: 4px;
 }
+
+.code {
+  color: white;
+}
+
+.methods {
+  color: #5918df;
+}
+
+.propname {
+  color: #eeff31;
+}
+
+.dot,
+.comment {
+  color: #3b3553;
+}
+
+
+.string {
+  color: #23e394;
+}
+
+.prop2 {
+  color: #24e33a;
+}
+
+.scope {
+  color: #e3244c;
+}
+
+.number {
+  color: #e39d24;
+}
+
+
+
+
+
 
 
 .about-container {
@@ -68,7 +104,7 @@ body {
 }
 
 .about {
-  @apply text-lg border-4 border-primary p-12 bg-secondary text-white font-bold;
+  @apply text-lg border-4 border-primary p-12 bg-secondary text-purple-700 font-bold;
   position:relative;
 }
 
